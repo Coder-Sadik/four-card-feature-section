@@ -32,12 +32,15 @@ header {
 	font-size: 32px;
 	font-weight: 600;
 	color: var(--Very_Dark_Blue);
+	white-space: nowrap;
 }
+
 .text {
 	color: var(--Grayish_Blue);
 	font-weight: 400;
 	font-size: 15px;
 	margin-top: 10px;
+	/* max-width: 80%; */
 }
 .motto {
 	font-size: 32px;
@@ -45,8 +48,8 @@ header {
 }
 
 .card-container {
-	height: 100%;
-	width: 100%;
+	height: 90%;
+	width: 90%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -59,10 +62,13 @@ header {
 	justify-content: center;
 	align-items: center;
 	gap: 30px;
+	min-width: 250px;
 }
 .card {
-	max-width: 350px;
+	max-width: 450px;
+	min-width: 250px;
 	height: 250px;
+
 	border-top: 5px solid var(--Cyan);
 	border-radius: 8px;
 	padding: 30px;
@@ -89,6 +95,7 @@ header {
 	position: absolute;
 	bottom: 30px;
 	right: 30px;
+	width: 50px;
 }
 
 .icon img {
@@ -96,7 +103,8 @@ header {
 }
 
 /* for mobile devices */
-@media (max-width: 460px) {
+
+@media (max-width: 768px) {
 	.motto,
 	.heading {
 		font-size: 24px;
