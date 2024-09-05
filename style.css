@@ -1,0 +1,115 @@
+/* google font  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+	/* colors */
+	/* primary */
+	--Red: hsl(0, 78%, 62%);
+	--Orange: hsl(34, 97%, 64%);
+	--Cyan: hsl(180, 62%, 55%);
+	--Blue: hsl(212, 86%, 64%);
+
+	/* neutral */
+	--Very_Dark_Blue: hsl(234, 12%, 34%);
+	--Grayish_Blue: hsl(229, 6%, 66%);
+	--Very_Light_Gray: hsl(0, 0%, 98%);
+}
+
+body {
+	font-family: "poppins", sans-serif;
+	background-color: var(--Very_Light_Gray);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+}
+header {
+	margin: 50px 0px;
+	text-align: center;
+}
+.motto,
+.heading {
+	font-size: 32px;
+	font-weight: 600;
+	color: var(--Very_Dark_Blue);
+}
+.text {
+	color: var(--Grayish_Blue);
+	font-weight: 400;
+	font-size: 15px;
+	margin-top: 10px;
+}
+.motto {
+	font-size: 32px;
+	font-weight: 200;
+}
+
+.card-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+
+.middle-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+.card {
+	max-width: 350px;
+	height: 250px;
+	border-top: 5px solid var(--Cyan);
+	border-radius: 8px;
+	padding: 30px;
+	/* -webkit-box-shadow: 0px 10px 27px 5px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 10px 27px 5px rgba(0, 0, 0, 0.22); */
+	box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+.card-2 {
+	border-top: 5px solid var(--Red);
+}
+.card-3 {
+	border-top: 5px solid var(--Orange);
+}
+.card-4 {
+	border-top: 5px solid var(--Blue);
+}
+.card .card-title {
+	color: var(--Very_Dark_Blue);
+	font-weight: 400;
+}
+
+.icon {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+}
+
+.icon img {
+	height: auto;
+}
+
+/* for mobile devices */
+@media (max-width: 460px) {
+	.motto,
+	.heading {
+		font-size: 24px;
+	}
+	header {
+		margin: 10%;
+	}
+
+	.br {
+		display: none;
+	}
+	.card-container {
+		flex-direction: column;
+		margin: 10%;
+	}
+}
